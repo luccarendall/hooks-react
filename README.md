@@ -2,7 +2,7 @@
 
 # Projeto de Demonstração de Hooks React
 
-Este é um projeto de demonstração que ilustra o uso de alguns hooks no React. Este projeto destina-se a fins educacionais e serve como um guia prático para entender alguns dos diferentes hooks disponíveis no React.
+Este é um projeto de demonstração que ilustra o uso de alguns hooks no React. Este projeto destina-se a fins educacionais e serve como um guia prático para entender alguns dos diferentes hooks disponíveis no React. Cada hook implementado está disponível em uma pull request separada.
 
 ## Instalação
 
@@ -31,12 +31,6 @@ Para executar este projeto localmente, siga estas etapas:
    ```bash
    npm start
    ```
-
-## Demonstração de Hooks
-
-A tabela a seguir mostra exemplos de como cada hook é usado no projeto:
-
-Certamente! Aqui está uma versão melhorada da descrição de cada hook, com base na documentação oficial e informações de referência do W3Schools e MDN:
 
 ## Demonstração de Hooks
 
