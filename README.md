@@ -1,70 +1,69 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Projeto de Demonstração de Hooks React
 
-In the project directory, you can run:
+Este é um projeto de demonstração que ilustra o uso de alguns hooks no React. Este projeto destina-se a fins educacionais e serve como um guia prático para entender alguns dos diferentes hooks disponíveis no React.
 
-### `npm start`
+## Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para executar este projeto localmente, siga estas etapas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone este repositório para o seu computador:
 
-### `npm test`
+   ```bash
+   git clone git@github.com:luccarendall/hooks-react.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navegue para o diretório do projeto:
 
-### `npm run build`
+   ```bash
+   cd hooks-react
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Instale as dependências:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Inicie o aplicativo:
 
-### `npm run eject`
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Demonstração de Hooks
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A tabela a seguir mostra exemplos de como cada hook é usado no projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Certamente! Aqui está uma versão melhorada da descrição de cada hook, com base na documentação oficial e informações de referência do W3Schools e MDN:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Demonstração de Hooks
 
-## Learn More
+A tabela a seguir mostra exemplos de como cada hook é usado no projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Hook                 | Descrição                                                                     |
+|----------------------|-------------------------------------------------------------------------------|
+| `useState`           | Este hook permite que você adicione um estado local a componentes funcionais. Ele retorna um par de valores: o estado atual e uma função para atualizá-lo. Usado para gerenciar estados simples, como contadores. |
+| `useEffect`          | O `useEffect` lida com efeitos colaterais em componentes funcionais. Ele permite que você execute código após a renderização do componente, o que é útil para realizar operações assíncronas, como requisições HTTP, e manipular a árvore DOM. |
+| `useContext`         | Este hook fornece acesso a um contexto global, permitindo o compartilhamento de informações em componentes aninhados sem a necessidade de passar props manualmente. É útil para temas, autenticação e outras configurações globais. |
+| `useReducer`         | O `useReducer` é uma alternativa ao `useState` quando você precisa lidar com estados complexos. Ele segue o padrão Redux e gerencia estados usando um "reducer" e uma ação. Útil para casos em que o estado depende do estado anterior. |
+| `useRef`             | `useRef` cria uma referência mutável que pode ser usada para acessar elementos do DOM diretamente ou para armazenar valores persistentes entre renderizações sem causar uma nova renderização. É usado para interações com o DOM ou para manter valores não afetados pelas mudanças de estado. |
+| `useMemo`            | O `useMemo` memoiza valores calculados, evitando cálculos repetidos em renderizações. Ele recebe uma função e uma lista de dependências e recalcula o valor apenas quando as dependências mudam. É útil para otimizar o desempenho ao calcular valores computacionais. |
+| `useCallback`        | `useCallback` é semelhante ao `useMemo`, mas memoiza funções em vez de valores. Ele é usado para evitar a recriação de funções em renderizações, especialmente quando essas funções são passadas como props para componentes filhos. |
+| `useLayoutEffect`    | O `useLayoutEffect` é semelhante ao `useEffect`, mas executa de forma síncrona após todas as mudanças no DOM. É útil quando você precisa medir ou fazer alterações no layout do DOM imediatamente após uma renderização. |
+| `useDebugValue`      | `useDebugValue` é usado para personalizar a exibição de informações de depuração em ferramentas de desenvolvedor, como o React DevTools. É útil para fornecer informações adicionais sobre hooks personalizados. |
+| `useImperativeHandle`| O `useImperativeHandle` é usado para personalizar o valor retornado por um `ref` em componentes filhos, permitindo o controle de funções específicas expostas a componentes pais. É útil quando você precisa interagir diretamente com um componente filho. |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Fontes utilizadas
 
-### Code Splitting
+1. [Documentação oficial do React](https://legacy.reactjs.org/docs/getting-started.html)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. [W3Schools](https://www.w3schools.com/react/react_hooks.asp)
 
-### Analyzing the Bundle Size
+3. [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Contribuições
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sinta-se à vontade para contribuir com melhorias ou adicionar mais exemplos de uso de hooks React a este projeto. Basta criar um fork deste repositório, fazer suas modificações e enviar um pull request.
