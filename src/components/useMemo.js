@@ -15,6 +15,8 @@ function MeuComponente() {
     return num1 ** num2;
   }, [num1, num2]) // Assim como o useEffect, o useMemo vai fazer com que a função seja executada apenas quando houver alteração nessas variáveis de estado. Isso funciona pq qualquer alteração de estado o componente é renderizado novamente, seja em qualquer 1 dos 4 estados. Então mesmo que fosse uma soma (que é mais rapido), ela mudaria o estado e a cascata chegaria a potencia (que demora), mesmo que os valores num1 e num2 que são usados na potencia não fossem alterados. O useMemo cria uma memória cache onde caso os valores de num1 e num2 não sejam alterados, a renderização passa reto pela função de calcular a potencia e só persiste os valores salvos. Fazendo assim com que seja gasto apenas o tempo necessário para realizar a operação que se deseja.
 
+  // Em resumo: Funções pesadas continuam pesadas mas elas não são executadas sempre que o componente é montado, a menos que seja necessário.
+
   const soma = num3 + num4;
 
   return (
