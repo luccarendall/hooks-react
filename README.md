@@ -31,6 +31,12 @@ Para executar este projeto localmente, siga estas etapas:
    ```bash
    npm start
    ```
+   
+4. Acesse a branch correspondente ao hook escolhido:
+
+   ```bash
+   ex: git checkout useState-demonstration
+   ```
 
 ## Demonstração de Hooks
 
