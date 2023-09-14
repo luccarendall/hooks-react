@@ -8,11 +8,12 @@ function MeuComponente() {
   const [num3, setNum3] = useState(1);
   const [num4, setNum4] = useState(1);
 
-  const potencia = (() => { // Ao fazer uma função auto invocada "const potencia = (() => {...})()" invés de "const potencia = () => {...}" e chamar ela depoius potencia(). Ao fazer isso potencia deixa de ser uma função e vira uma variável que recebe o retorno da função, já que a função é declarada e chamada logo em seguida nesse formato.
+  // useMemo: 1º parâmetro é função callback e o 2º uma lista de sensitividade
+  const potencia = useMemo(() => { // Ao fazer uma função auto invocada "const potencia = (() => {...})()" invés de "const potencia = () => {...}" e chamar ela depoius potencia(). Ao fazer isso potencia deixa de ser uma função e vira uma variável que recebe o retorno da função, já que a função é declarada e chamada logo em seguida nesse formato.
     const delay = Date.now() + 1000; // Adiciona um delay de 1 segundo. Simula uma função mt pesada
     while (Date.now() < delay) {}
     return num1 ** num2;
-  })()
+  }, [num1, num2]) // Assim como o useEffect, o useMemo vai fazer com que a função seja executada apenas quando houver alteração nessas variáveis de estado. Isso funciona pq qualquer alteração de estado o componente é renderizado novamente, seja em qualquer 1 dos 4 estados. Então mesmo que fosse uma soma (que é mais rapido), ela mudaria o estado e a cascata chegaria a potencia (que demora), mesmo que os valores num1 e num2 que são usados na potencia não fossem alterados. O useMemo cria uma memória cache onde caso os valores de num1 e num2 não sejam alterados, a renderização passa reto pela função de calcular a potencia e só persiste os valores salvos. Fazendo assim com que seja gasto apenas o tempo necessário para realizar a operação que se deseja.
 
   const soma = num3 + num4;
 
