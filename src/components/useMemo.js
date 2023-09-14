@@ -8,17 +8,17 @@ function MeuComponente() {
   const [num3, setNum3] = useState(1);
   const [num4, setNum4] = useState(1);
 
-  const potencia = () => {
-    const future = Date.now() + 1000;
-    while (Date.now() < future) {}
+  const potencia = (() => { // Ao fazer uma função auto invocada "const potencia = (() => {...})()" invés de "const potencia = () => {...}" e chamar ela depoius potencia(). Ao fazer isso potencia deixa de ser uma função e vira uma variável que recebe o retorno da função, já que a função é declarada e chamada logo em seguida nesse formato.
+    const delay = Date.now() + 1000; // Adiciona um delay de 1 segundo. Simula uma função mt pesada
+    while (Date.now() < delay) {}
     return num1 ** num2;
-  }
+  })()
 
   const soma = num3 + num4;
 
   return (
     <div className='main'>
-        <p> {`${num1}^${num2}: ${potencia()}`} </p>
+        <p> {`${num1}^${num2}: ${potencia}`} </p>
         <div className='buttons'>
           <input type='number' value={num1} onChange={ (e) => setNum1(Number(e.target.value)) } />
           <input type='number' value={num2} onChange={ (e) => setNum2(Number(e.target.value)) } />
