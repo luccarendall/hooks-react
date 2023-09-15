@@ -17,8 +17,8 @@ const reducer = (state, action) => { // state são os estados e action as açõe
 }
 
 function TemplateComponent() {
-  const [count, setCount] = useState(0);
-  const [showText, setShowText] = useState(true);
+  // const [count, setCount] = useState(0);
+  // const [showText, setShowText] = useState(true);
 
 
 // Sintaxe:
