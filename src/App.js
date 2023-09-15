@@ -1,4 +1,4 @@
-import MeuComponente from './components/useState'; // adaptar para cada hook
+import MeuComponente from './components/useContext'; // adaptar para cada hook
 import './App.css';
 
 function App() {
