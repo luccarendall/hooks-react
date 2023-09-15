@@ -1,5 +1,16 @@
 import React, { useState, useReducer } from 'react';
 
+const reducer = (state, action) => { // state são os estados e action as ações que o dispatch vai disparara
+  switch(action.type) {
+    case 'increment':
+      return {...state, count: state.count + 1} // state passado com spread para que ao adicionar +1 não sobrescever o showText que tb tá no estado. O que o spread faz é alterar só o que é pedido, no caso o count: que está depois da virgula. Garantindo que os outros dados do objeto não vao ser sobrescritos e perdidos
+    case 'showText':
+      return {...state, showText: !state.showText}
+    default:
+      console.log('Switch caiu no default')
+      return 'Esta action não existe'
+    }
+}
 
 function TemplateComponent() {
   const [count, setCount] = useState(0);
