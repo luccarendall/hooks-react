@@ -9,5 +9,5 @@
 
 /* Adicionando margem superior de 5px para todos os botões */
 button {
-  margin-top: 10px;
+  margin: 10px;
 }
