@@ -14,7 +14,7 @@ export const ThemeProvider = ({children}) => {
   }
 
   return (
-    // passar na variável value os valores que eu quero compartilhar entre os componentes
+    // passar na variável value um objeto com os valores que eu quero compartilhar entre os componentes
     <ThemeContext.Provider value={{theme, modifyTheme}}> {/* nesse caso estou compartilhando uma forma de consultar o estado atual do tema e uma forma de alterar o estado do tema */}
       {children}
     </ThemeContext.Provider>
