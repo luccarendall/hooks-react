@@ -5,6 +5,8 @@ import React from 'react';
 // Passo 2: Envolver os componentes que vão receber os dados do contexto
 // Passo 3: Usar o useContext onde for necessário
 
+// o useContext geralmente é utilizado quando trabalhamos com rotas. Para trafegar dados entre essas rotas. Na verdade cada componente envia/recebe os dados ao/do contexto
+
 function MeuComponente() {
   return (
     <div>
