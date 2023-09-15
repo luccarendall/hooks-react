@@ -12,8 +12,11 @@ function Home() {
     <div>
       <p>Componente Home</p>
       <p>O tema atual é: {theme}</p>
+      <button onClick={modifyTheme}>Alterar tema</button>
     </div>
   );
 }
 
 export default Home;
+
+// Lembrete: a persistencia de estado usando useContext é perdida após atualizar a página. Para manter nesses casos use outra forma de persistir dados, como o localStorage por exemplo. Inclusive tem o hook useLocalStorage que é bastante usado. O useContext é mais para facilitar a comunicação entre os componentes, criando um intermediário entre todos os componentes filhos de app por exemplo. Evitando prop drilling que torna teu código mt mais complexo e propenso a erros
