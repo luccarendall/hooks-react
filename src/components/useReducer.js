@@ -58,7 +58,7 @@ function TemplateComponent() {
     dispatch({type: 'resetValues'})
   }
 
-  // se não quiser usar state.count no return por exemplo. Poderia fazer uma desestruturação assim:
+  // Se não quiser usar state.count no return por exemplo. Poderia fazer uma desestruturação assim:
   //  const { count, showText } = state  -->  Dessa forma poderia chamar normalmente no return abaixo. exemplo:
   // <h2>{count}</h2> --> Desestruturado
   // <h2>{state.count}</h2> --> Não desestruturado
