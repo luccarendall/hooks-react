@@ -42,12 +42,6 @@ Para executar este projeto localmente, siga estas etapas:
 
 A tabela a seguir mostra exemplos de como cada hook é usado no projeto:
 
-Certamente! Aqui está uma versão melhorada da descrição de cada hook, com base na documentação oficial e informações de referência do W3Schools e MDN:
-
-## Demonstração de Hooks
-
-A tabela a seguir mostra exemplos de como cada hook é usado no projeto:
-
 | Hook                 | Descrição                                                                     |
 |----------------------|-------------------------------------------------------------------------------|
 | `useState`           | Este hook permite que você adicione um estado local a componentes funcionais. Ele retorna um par de valores: o estado atual e uma função para atualizá-lo. Usado para gerenciar estados simples, como contadores. |
